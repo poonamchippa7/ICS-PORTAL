@@ -14,7 +14,15 @@ function App() {
   const [fPlace, setFPlace] = useState('');
   
   const  submitHandler = () => {
-    console.log(farmerName, farmerId, farmerAdd, fName, fId, fAdd, fSerial, fDate, fPlace );
+    console.log(farmerName, 
+      farmerId, 
+      farmerAdd, 
+      fName, 
+      fId, 
+      fAdd, 
+      fSerial, 
+      fDate, 
+      fPlace );
   }
   return (
     <>
@@ -87,7 +95,7 @@ function App() {
                 <input
                   class="effect 16"
                   type="text"
-                  placeholder="(Name of Farmer)"
+                  placeholder="Condition1"
                   onChange={(e) => setFName(e.target.value)}
                     value={fName}
                     required="required"
@@ -97,7 +105,7 @@ function App() {
                 <input
                   class="effect 16"
                   type="text"
-                  placeholder="(ID Number)"
+                  placeholder="Condition2"
                   onChange={(e) => setFId(e.target.value)}
                     value={fId}
                     required="required"
@@ -106,7 +114,7 @@ function App() {
               <tr>
                 <input class="effect 16" 
                 type="text"
-                 placeholder="(Address)"
+                 placeholder="Condition3"
                  onChange={(e) => setFAdd(e.target.value)}
                     value={fAdd}
                     required="required" />
@@ -128,7 +136,7 @@ function App() {
             within xx/xx/xxxx and
           </p>
           <div className="Date">
-            <label for="birthday">Birthday:</label>
+            <label for="birthday">Date:</label>
             <input type="date"
              id="birthday" 
              name="birthday"
