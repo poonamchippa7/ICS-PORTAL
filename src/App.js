@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
 
 function App() {
+  
   const [farmerName, setFarmerName] = useState('');
   const [farmerId, setFarmerId] = useState('');
   const [farmerAdd, setFarmerAdd] = useState('');
@@ -14,19 +15,23 @@ function App() {
   const [fPlace, setFPlace] = useState('');
   
   const  submitHandler = () => {
-    console.log(farmerName, 
-      farmerId, 
-      farmerAdd, 
-      fName, 
-      fId, 
-      fAdd, 
-      fSerial, 
-      fDate, 
-      fPlace );
-  }
+    let temparr = {
+      FarmerName: farmerName,
+      FarmerID: farmerId,
+      FarmerAdd: farmerAdd,
+      FName: fName,
+      FId:setFId,
+      Fserial:setFSerial,
+      FDate:setFData,
+      FPlace:setFPlace,
+      FAdd:setFAdd,
+    }
+    console.log(temparr)
+  } 
+  
   return (
     <>
-      <form  >
+      <form onSubmit={submitHandler} >
         
       <div className="container border d-flex align-items-center justify-content-center">
         <div className="annex 4">
@@ -47,6 +52,7 @@ function App() {
                     placeholder="Enter Farmer’s name  "
                     name="farmername"
                     onChange={(e)=> setFarmerName(e.target.value)}
+                    
                     value={farmerName}
                     required="required"
                   />
@@ -173,6 +179,7 @@ function App() {
           <input
             type="button"
             value="Reset"
+             onClick={ submitHandler}
                     
                 
           />
