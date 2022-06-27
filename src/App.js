@@ -20,11 +20,11 @@ function App() {
       FarmerID: farmerId,
       FarmerAdd: farmerAdd,
       FName: fName,
-      FId:setFId,
-      Fserial:setFSerial,
-      FDate:setFData,
-      FPlace:setFPlace,
-      FAdd:setFAdd,
+      FId:fId,
+      Fserial:fSerial,
+      FDate:fDate,
+      FPlace:fPlace,
+      FAdd:fAdd,
     }
     console.log(temparr)
   } 
@@ -174,14 +174,6 @@ function App() {
             type="button"
             value="Submit"              
              onClick={ submitHandler}     
-          />
-          
-          <input
-            type="button"
-            value="Reset"
-             onClick={ submitHandler}
-                    
-                
           />
           </tr>
         </div> 
