@@ -99,7 +99,7 @@ export default function Declaration(){
         </div>
         </div>
         <div className="form-group col-md-6 a-right my-2">
-            <Button href="/approval2">Next</Button> 
+            <Button href="/approval2">Submit</Button> 
 
             {/* //<Link to="/checkpoint">Next</Link> */}
            

@@ -252,7 +252,7 @@ return(
   </Table  >
             </div>
             <div className="form-group col-md-6 a-right my-2">
-            <Button href="/checkpoint">Next</Button> 
+            <Button href="/checkpoint">Submit</Button> 
 
             {/* //<Link to="/checkpoint">Next</Link> */}
            

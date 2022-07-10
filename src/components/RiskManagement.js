@@ -196,7 +196,7 @@ export default function RiskManagement() {
 
        
 <div className="form-group col-md-6 a-right my-2">
-            <Button href="/approval1">Next</Button> 
+            <Button href="/approval1">Submit</Button> 
 
             {/* //<Link to="/checkpoint">Next</Link> */}
            

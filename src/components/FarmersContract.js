@@ -158,7 +158,7 @@ accredited Certification Body and give access to the fields, stores and document
             </div>
           </div>
           <div className="form-group col-md-6 a-right my-2">
-            <Button href="/FarmDairy">Next</Button> 
+            <Button href="/FarmDairy">Submit</Button> 
 
             {/* //<Link to="/checkpoint">Next</Link> */}
            

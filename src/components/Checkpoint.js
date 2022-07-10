@@ -481,7 +481,7 @@ export default function Checkpoint() {
 
 
                     <div className="form-group col-md-6 a-right my-2">
-                        <Button href="/riskmanagement">Next</Button>
+                        <Button href="/riskmanagement">Submit</Button>
 
                         {/* //<Link to="/checkpoint">Next</Link> */}
 

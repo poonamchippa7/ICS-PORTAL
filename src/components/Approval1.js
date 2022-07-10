@@ -101,7 +101,7 @@ export default function Approval1() {
         </div>
         </div>
         <div className="form-group col-md-6 a-right my-2">
-            <Button href="/Declaration">Next</Button> 
+            <Button href="/Declaration">Submit</Button> 
 
             {/* //<Link to="/checkpoint">Next</Link> */}
            

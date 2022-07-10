@@ -220,7 +220,7 @@ setInputFields(values);
                 </div>
             </div>
             <div className="form-group col-md-6 a-right my-2">
-            <Button href="/">Next</Button> 
+            <Button href="/">Submit</Button> 
 
             {/* //<Link to="/checkpoint">Next</Link> */}
            
