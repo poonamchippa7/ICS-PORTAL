@@ -1,4 +1,4 @@
-import React ,{useState} from 'react';
+import React ,{useState,useEffect} from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import {Table,Button} from "react-bootstrap";
 import { BsPlusSquare ,BsDashSquare} from 'react-icons/bs';
@@ -66,6 +66,8 @@ export default function ExitOfFarmer() {
     values.splice(values.findIndex(value => value.id === id), 1);
     setInputFields(values);
     }
+    useEffect(() => {}, [inputFields]);
+
 
   return (
     <section>
@@ -75,6 +77,7 @@ export default function ExitOfFarmer() {
                   <div className="row">
                   
                       <div className="col my-4 ">
+                      {JSON.stringify(inputFields)}
                 <h1 >APPLICATION FORMAT FOR EXIT OF FARMER FROM ICS
 
                 </h1>
