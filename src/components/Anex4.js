@@ -172,7 +172,7 @@ function App() {
           <div>
         <tr><input
             type="button"
-            value="Submit"              
+            value="Submit"         
              onClick={ submitHandler}     
           />
           </tr>
