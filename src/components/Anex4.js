@@ -7,9 +7,9 @@ function App() {
   const [farmerName, setFarmerName] = useState('');
   const [farmerId, setFarmerId] = useState('');
   const [farmerAdd, setFarmerAdd] = useState('');
-  const [fName, setFName] = useState('');
-  const [fId, setFId] = useState('');
-  const [fAdd, setFAdd] = useState('');
+  const [Condition1, setCondition1] = useState('');
+  const [Condtition2, setCondition2] = useState('');
+  const [Condition3, setCondition3] = useState('');
   const [fSerial, setFSerial] = useState('');
   const [fDate, setFData] = useState('');
   const [fPlace, setFPlace] = useState('');
@@ -19,12 +19,12 @@ function App() {
       FarmerName: farmerName,
       FarmerID: farmerId,
       FarmerAdd: farmerAdd,
-      FName: fName,
-      FId:fId,
+      Condition1: Condition1,
+      Condition2:Condtition2,
       Fserial:fSerial,
       FDate:fDate,
       FPlace:fPlace,
-      FAdd:fAdd,
+      setCondition3:Condition3,
     }
     console.log(temparr)
   } 
@@ -102,8 +102,8 @@ function App() {
                   class="effect 16"
                   type="text"
                   placeholder="Condition1"
-                  onChange={(e) => setFName(e.target.value)}
-                    value={fName}
+                  onChange={(e) => setCondition1(e.target.value)}
+                    value={Condition1}
                     required="required"
                 />
               </tr>
@@ -112,8 +112,8 @@ function App() {
                   class="effect 16"
                   type="text"
                   placeholder="Condition2"
-                  onChange={(e) => setFId(e.target.value)}
-                    value={fId}
+                  onChange={(e) => setCondition2(e.target.value)}
+                    value={Condtition2}
                     required="required"
                 />
               </tr>
@@ -121,8 +121,8 @@ function App() {
                 <input class="effect 16" 
                 type="text"
                  placeholder="Condition3"
-                 onChange={(e) => setFAdd(e.target.value)}
-                    value={fAdd}
+                 onChange={(e) => setCondition3(e.target.value)}
+                    value={Condition3}
                     required="required" />
               </tr>
             </tr>
